@@ -1,0 +1,129 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+  }
+  
+  .profile-menu {
+    background-color: #fff;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .profile-menu .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: fill;
+  }
+  
+  .profile-menu .username {
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  
+  .profile-menu .badge {
+    background-color: #bcb9f7;
+    color: #6538e7;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  
+  .profile-menu .menu-icon {
+    /* margin-left: auto; */
+    font-size: 20px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    max-width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1;
+    top: 60px;
+    right: 0;
+    padding: 10px;
+  }
+  .user-info .badge{
+    background-color: #bcb9f7;
+    color: #6538e7;
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .dropdown-content .user-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .dropdown-content .user-info .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .dropdown-content .username {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .dropdown-content .email {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show dropdown content on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* -----screens----- */
+  @media screen and (max-width: 768px) {
+    .dropdown {
+       
+        width: 50%;
+      }
+  }
+  @media screen and (max-width:460px) {
+    .dropdown {
+       
+        width: 90%;
+      }
+  }
