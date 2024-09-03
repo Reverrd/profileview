@@ -110,14 +110,10 @@ body {
   }
   
   /* Show dropdown content on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
+ 
+  hr{
+    border-color: #8888885e;
   }
-  
-  .dropdown:active .dropdown-content {
-    display: block;
-  }
-  
   /* -----screens----- */
   @media screen and (max-width: 768px) {
     .dropdown {
