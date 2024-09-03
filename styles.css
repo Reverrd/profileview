@@ -114,6 +114,10 @@ body {
     display: block;
   }
   
+  .dropdown:active .dropdown-content {
+    display: block;
+  }
+  
   /* -----screens----- */
   @media screen and (max-width: 768px) {
     .dropdown {
